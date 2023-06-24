@@ -14,21 +14,3 @@ menubtn.onclick = function () {
   dropmenu.style.display = (dropmenu.style.display === "none") ? "block" : "none";
 }
 
-const profile = document.getElementById("profile");
-const sup = document.getElementById("sup");
-
-
-function resetElement() {
-  sup.style.transform = 'none';
-  sup.style.opacity = '1';
-}
-
-function translateAndFade() {
-  sup.style.transform = "translateY(70px)";
-  sup.style.opacity = '0';
-}
-profile.onclick = translateAndFade();
-
-sup.addEventListener('transitionend', resetElement);
-
-setTimeout(translateAndFade, 1000);
