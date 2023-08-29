@@ -396,6 +396,7 @@ nav {
     width: 32px;
     height: 32px;
     margin: 0px 0px 7px 7px;
+    border-radius: 50%;
     background: rgba(174, 208, 209, 0.01);
 }
 
